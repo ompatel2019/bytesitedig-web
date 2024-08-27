@@ -14,6 +14,8 @@ export default function App() {
   return (
     <>
     <Navbar/>
+
+    
     {/* 
     <Hero/>
     <LetsMakeItHappen/>
