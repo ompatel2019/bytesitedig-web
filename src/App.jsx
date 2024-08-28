@@ -1,5 +1,7 @@
 import Navbar from './components/Navbar'
+import NavbarMob from './components/NavbarMob'
 import Hero from './components/Hero'
+import HeroMob from './components/HeroMob'
 import LetsMakeItHappen from './components/LetsMakeItHappen'
 import Services from './components/Services'
 import AboutUs from './components/AboutUs'
@@ -14,10 +16,11 @@ export default function App() {
   return (
     <>
     <Navbar/>
-
+    <NavbarMob/>
+    <Hero/>
     
     {/* 
-    <Hero/>
+    <HeroMob/>
     <LetsMakeItHappen/>
     <Services/>
     <AboutUs/>
