@@ -1,8 +1,11 @@
 import Navbar from './components/Navbar'
 import NavbarMob from './components/NavbarMob'
 import Hero from './components/Hero'
-import HeroMob from './components/HeroMob'
 import LetsMakeItHappen from './components/LetsMakeItHappen'
+import NavbarOLD from './components/NavbarOLD'
+import NavbarMobOLD from './components/NavbarMobOLD'
+import HeroOLD from './components/HeroOLD'
+import LetsMakeItHappenOLD from './components/LetsMakeItHappenOLD'
 import Services from './components/Services'
 import AboutUs from './components/AboutUs'
 import Portfolio from './components/Portfolio'
@@ -15,13 +18,12 @@ import Footer from './components/Footer'
 export default function App() {
   return (
     <>
-    
-    {/* 
     <Navbar/>
+
+    {/* 
     <NavbarMob/>
     <Hero/>
     <LetsMakeItHappen/>
-    <HeroMob/>
     <Services/>
     <AboutUs/>
     <Portfolio/>
