@@ -15,13 +15,13 @@ import Footer from './components/Footer'
 export default function App() {
   return (
     <>
+    
+    {/* 
     <Navbar/>
     <NavbarMob/>
     <Hero/>
-    
-    {/* 
-    <HeroMob/>
     <LetsMakeItHappen/>
+    <HeroMob/>
     <Services/>
     <AboutUs/>
     <Portfolio/>

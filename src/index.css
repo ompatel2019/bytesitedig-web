@@ -302,3 +302,24 @@
   .rotate-animation {
     animation: rotate 10s linear infinite;
   }
+
+
+/*Sliding text*/
+.marquee {
+  overflow: hidden;
+  position: relative;
+  width: 100%; /* Ensures the marquee takes the full width */
+  height: 100px; /* Adjust the height as needed */
+}
+
+.track {
+  position: absolute;
+  white-space: nowrap;
+  animation: marquee 25s linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(100%); }
+  to { transform: translateX(-100%); }
+}
+

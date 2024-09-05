@@ -14,13 +14,13 @@ const NavbarMob = () => {
   return (
     <>
       <div className="md:hidden max-md:px-[48px] max-sm:px-[16px] font-questrial bg-c1 text-c4 z-50 sticky top-0">
-        <nav className="px-[16px] pt-[24px] pb-[16px] flex justify-between z-50 relative">
-          <h2 className="text-[32px]">Byt.</h2>
+        <nav className="px-[16px] pt-[16px] flex justify-between z-50 relative">
+          <h2 className="text-[24px]">Byt.</h2>
 
           <label className="hamburger z-50">
             <input type="checkbox" checked={isMenuOpen} onChange={toggleMenu} />
             <svg
-              viewBox="0 0 32 32"
+              viewBox="0 0 40 40"
               className="cursor-pointer z-50"
             >
               <path
