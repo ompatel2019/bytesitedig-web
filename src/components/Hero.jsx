@@ -1,7 +1,9 @@
 import React, { useEffect, useState, useRef } from 'react';
 import gsap from 'gsap';
 import { TextPlugin } from 'gsap/TextPlugin';
+import Lottie from 'lottie-react';
 import fiveStars from '../images/stars.svg';
+import scrollAnimation from '../assets/scroll.json'; 
 
 gsap.registerPlugin(TextPlugin);
 
@@ -58,7 +60,6 @@ const Hero = () => {
 
   return (
     <div className='2xl:px-[160px] xl:px-[96px] lg:px-[72px] md:px-[24px] sm:px-[16px] max-sm:px-[16px] py-[32px] max-sm:py-[24px] bg-c1'>
-      {/* Testimonials Section */}
       <div className='flex text-center text-white font-sans space-x-8 justify-around'>
         {displayTestimonials.map((testimonial, index) => (
           <div className='flex flex-col items-center w-56' key={index}>
@@ -85,6 +86,11 @@ const Hero = () => {
           Services
         </button>
       </div>
+
+      <div className='flex justify-center py-8'>
+        <Lottie className='' animationData={scrollAnimation} loop={true} />
+      </div>
+
     </div>
   );
 };
