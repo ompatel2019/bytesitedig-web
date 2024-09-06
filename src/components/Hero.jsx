@@ -15,16 +15,20 @@ const Hero = () => {
   ];
 
   const [displayTestimonials, setDisplayTestimonials] = useState(testimonials);
+  const [buttonText, setButtonText] = useState('Start a project');
   const typewriterRef = useRef(null);
 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 768) {
         setDisplayTestimonials(testimonials.slice(0, -1));
+        setButtonText('Book a call')
       } else {
         setDisplayTestimonials(testimonials);
+        setButtonText('Start a project')
       }
     };
+
 
     handleResize();
     window.addEventListener('resize', handleResize);
@@ -59,7 +63,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className='2xl:px-[160px] xl:px-[96px] lg:px-[72px] md:px-[24px] sm:px-[16px] max-sm:px-[16px] py-[32px] max-sm:py-[24px] bg-c1'>
+    <div className='2xl:px-[160px] 2xl:py-[64px] xl:px-[96px] lg:px-[72px] md:px-[24px] sm:px-[16px] max-sm:px-[16px] py-[32px] bg-c1'>
       <div className='flex text-center text-white font-sans space-x-8 justify-around'>
         {displayTestimonials.map((testimonial, index) => (
           <div className='flex flex-col items-center w-56' key={index}>
@@ -77,18 +81,18 @@ const Hero = () => {
         Find a place on the internet within 14 days.
       </p>
 
-      <div className='w-full flex flex-col md:flex-row font-mono gap-2 mt-[20px] md:mt-[40px] justify-center'>
-        <button className='button-2 w-full md:w-auto'>
-          Book a call
+      <div className='flex flex-row font-mono gap-2 mt-[20px] md:mt-[40px] justify-center'>
+        <button className='button-2 max-md:text-sm'>
+          {buttonText}
         </button>
 
-        <button className='button-2 w-full md:w-auto'>
+        <button className='button-2 max-md:text-sm'>
           Services
         </button>
       </div>
 
       <div className='flex justify-center py-8'>
-        <Lottie className='' animationData={scrollAnimation} loop={true} />
+        <Lottie className='max-md:w-14' animationData={scrollAnimation} loop={true} />
       </div>
 
     </div>

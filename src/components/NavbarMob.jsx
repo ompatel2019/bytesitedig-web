@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import logo from '../images/logoDark.svg'
 
 const NavbarMob = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -15,7 +16,9 @@ const NavbarMob = () => {
     <>
       <div className="md:hidden max-md:px-[48px] max-sm:px-[16px] font-questrial bg-c1 text-c4 z-50 sticky top-0">
         <nav className="px-[16px] pt-[16px] flex justify-between z-50 relative">
-          <h2 className="text-[24px]">Byt.</h2>
+          <div>
+            <img className='w-14' src={logo} alt="" />
+          </div>
 
           <label className="hamburger z-50">
             <input type="checkbox" checked={isMenuOpen} onChange={toggleMenu} />
