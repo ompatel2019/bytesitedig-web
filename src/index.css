@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  overflow-x: hidden;
+}
+
 /* From Uiverse.io by satyamchaudharydev */ 
 /* inspired form gumroad website */
 .button {
@@ -215,3 +219,44 @@
 .fade-element.fade-in {
   opacity: 1;
 }
+
+/* Container to hold the sliding text */
+.sliding-text-wrapper {
+  width: 100vw; /* Full width of the viewport */
+  overflow: hidden; /* Hide the overflow */
+  white-space: nowrap; /* Ensure text stays in one line */
+  position: relative;
+}
+
+/* Styling for the sliding text */
+.sliding-text {
+  display: inline-block;
+  white-space: nowrap; /* Prevent text wrapping */
+  font-size: 4vw; /* Responsive font size */
+  font-weight: 600;
+  animation: slide 10s linear infinite; /* Continuous sliding animation */
+}
+
+/* Keyframes for seamless sliding */
+@keyframes slide {
+  0% {
+    transform: translateX(0); /* Start at normal position */
+  }
+  100% {
+    transform: translateX(-50%); /* Move left by half its width */
+  }
+}
+
+/* Ensure text size is responsive */
+@media (max-width: 768px) {
+  .sliding-text {
+    font-size: 6vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .sliding-text {
+    font-size: 8vw;
+  }
+}
+

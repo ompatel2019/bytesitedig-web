@@ -2,8 +2,6 @@ import Navbar from './components/Navbar'
 import NavbarMob from './components/NavbarMob'
 import Hero from './components/Hero'
 import LetsMakeItHappen from './components/LetsMakeItHappen'
-import HeroOLD from './components/HeroOLD'
-import LetsMakeItHappenOLD from './components/LetsMakeItHappenOLD'
 import Services from './components/Services'
 import AboutUs from './components/AboutUs'
 import Portfolio from './components/Portfolio'
@@ -19,10 +17,10 @@ export default function App() {
     <Navbar/>
     <NavbarMob/>
     <Hero/>
-    
-    {/* 
     <LetsMakeItHappen/>
     <Services/>
+    
+    {/* 
     <AboutUs/>
     <Portfolio/>
     <WhyChooseUs/>

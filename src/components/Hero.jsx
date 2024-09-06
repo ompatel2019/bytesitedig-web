@@ -31,7 +31,6 @@ const Hero = () => {
       }
     };
 
-
     handleResize();
     window.addEventListener('resize', handleResize);
 
@@ -51,7 +50,7 @@ const Hero = () => {
     words.forEach(word => {
       let textTimeline = gsap.timeline({
         repeat: 1,
-        yoyo: true,
+        yoyo: true,                                                                         
         repeatDelay: 3,
       });
 
@@ -65,7 +64,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className='2xl:px-[160px] 2xl:py-[64px] xl:px-[96px] lg:px-[72px] md:px-[24px] sm:px-[16px] max-sm:px-[16px] py-[32px] bg-c1'>
+    <div className='2xl:px-[160px] 2xl:py-[56px] xl:px-[96px] lg:px-[72px] md:px-[24px] sm:px-[16px] max-sm:px-[16px] pt-[24px] bg-c1'>
       <div className='flex text-center text-white font-sans space-x-8 justify-around'>
         {displayTestimonials.map((testimonial, index) => (
           <div className='flex flex-col items-center w-56' key={index}>
@@ -93,8 +92,8 @@ const Hero = () => {
         </button>
       </div>
 
-      <div className='flex justify-center py-8 fade'>
-        <Lottie className='max-md:w-14' animationData={scrollAnimation} loop={true} />
+      <div className='flex justify-center pt-8 pb-2 fade'>
+        <Lottie className='w-16 max-md:w-12' animationData={scrollAnimation} loop={true} />
       </div>
 
     </div>
