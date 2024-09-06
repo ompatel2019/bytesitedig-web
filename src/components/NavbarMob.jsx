@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import logo from '../images/logoDark.svg'
+import useFadeIn from './Animations.jsx'; // Import the custom fade-in hook
 
 const NavbarMob = () => {
+  useFadeIn(); // Apply the fade-in hook
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -42,22 +44,22 @@ const NavbarMob = () => {
         }`}
       >
         <ul className="font-questrial text-c4 text-h6 space-y-8 text-center z-50">
-          <li>
+          <li className='fadeIn-1'>
             <a href="#" onClick={closeMenu}>
               Home
             </a>
           </li>
-          <li>
+          <li className='fadeIn-2'>
             <a href="#whyworkwithus" onClick={closeMenu}>
               Pricing
             </a>
           </li>
-          <li>
+          <li className='fadeIn-3'>
             <a href="#portfolio" onClick={closeMenu}>
               Projects
             </a>
           </li>
-          <li>
+          <li className='fadeIn-4'>
             <a href="#form" onClick={closeMenu}>
               Contact
             </a>

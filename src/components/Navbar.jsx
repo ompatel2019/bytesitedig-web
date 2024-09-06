@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../images/logoDark.svg';
-import useFadeIn from './Animations'; // Import the custom fade-in hook
+import useFadeIn from './Animations.jsx'; // Import the custom fade-in hook
 
 const Navbar = () => {  
     useFadeIn(); // Apply the fade-in hook
@@ -15,7 +15,7 @@ const Navbar = () => {
                         </div>
                     </div>
 
-                    <div className='bg-c2 max-md:hidden 2xl:text-xl text-c3 text-lg border-[1px] border-white px-8 p-[0.75rem] rounded-full fade'>
+                    <div className='bg-c2 max-md:hidden 2xl:text-xl text-c3 text-lg border-[1px] border-white px-8 p-[0.75rem] rounded-full fade-right'>
                         <ul className='font-questrial flex space-x-8'>
                             {['Home', 'Services', 'Projects', 'Pricing', 'Contact'].map((item, index) => {
                                 const navItem = `nav-item fadeIn-${index + 1}`; // Construct className with index here

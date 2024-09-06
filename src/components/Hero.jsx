@@ -4,10 +4,12 @@ import { TextPlugin } from 'gsap/TextPlugin';
 import Lottie from 'lottie-react';
 import fiveStars from '../images/stars.svg';
 import scrollAnimation from '../assets/scroll.json'; 
+import useFadeIn from './Animations.jsx'; 
 
 gsap.registerPlugin(TextPlugin);
 
 const Hero = () => {
+  useFadeIn(); 
   const testimonials = [
     'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
@@ -81,7 +83,7 @@ const Hero = () => {
         Find a place on the internet within 14 days.
       </p>
 
-      <div className='flex flex-row font-mono gap-2 mt-[20px] md:mt-[40px] justify-center'>
+      <div className='flex flex-row font-mono gap-2 mt-[20px] md:mt-[40px] justify-center fade-element'>
         <button className='button-2 max-md:text-sm'>
           {buttonText}
         </button>
@@ -91,7 +93,7 @@ const Hero = () => {
         </button>
       </div>
 
-      <div className='flex justify-center py-8'>
+      <div className='flex justify-center py-8 fade'>
         <Lottie className='max-md:w-14' animationData={scrollAnimation} loop={true} />
       </div>
 
