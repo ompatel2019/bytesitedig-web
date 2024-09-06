@@ -65,7 +65,7 @@ const Hero = () => {
 
   return (
     <div className='2xl:px-[160px] 2xl:py-[56px] xl:px-[96px] lg:px-[72px] md:px-[24px] sm:px-[16px] max-sm:px-[16px] pt-[24px] bg-c1'>
-      <div className='flex text-center text-white font-sans space-x-8 justify-around'>
+      <div className='flex text-center text-white font-sans space-x-14 max-md:space-x-4 justify-center'>
         {displayTestimonials.map((testimonial, index) => (
           <div className='flex flex-col items-center w-56' key={index}>
             <img className='2xl:w-48 max-md:w-24' src={fiveStars} alt="" />

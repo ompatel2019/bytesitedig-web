@@ -15,26 +15,27 @@ const Navbar = () => {
                         </div>
                     </div>
 
-                    <div className='bg-c2 2xl:text-xl text-c3 text-lg border-[1px] border-white px-8 p-[0.75rem] rounded-full fade-right'>
-                        <ul className='font-questrial flex space-x-8'>
-                            {['Home', 'Services', 'Projects', 'Pricing', 'Contact'].map((item, index) => {
-                                const navItem = `nav-item fadeIn-${index + 1}`; // Construct className with index here
-                                return (
-                                    <li className={navItem} key={index}>
-                                        <a href={`#${item.toLowerCase()}`}>
-                                            <span className='nav-text-one'>{item}</span>
-                                            <span className='nav-text-two'>{item}</span>
-                                        </a>
-                                    </li>
-                                );
-                            })}
-                        </ul>
-                    </div>
-
-                    <div>
-                        <button className='bg-c3 font-questrial text-lg button 2xl:text-xl fade-right'>
-                            Book a call +
-                        </button>
+                    <div className='flex space-x-4 items-center'>
+                        <div className='bg-c2 2xl:text-xl text-c3 text-lg border-[1px] border-white px-8 p-[0.75rem] rounded-full fade-right'>
+                            <ul className='font-questrial flex space-x-8'>
+                                {['Home', 'Projects', 'Pricing', 'Services', 'Contact'].map((item, index) => {
+                                    const navItem = `nav-item fadeIn-${index + 1}`; // Construct className with index here
+                                    return (
+                                        <li className={navItem} key={index}>
+                                            <a href={`#${item.toLowerCase()}`}>
+                                                <span className='nav-text-one'>{item}</span>
+                                                <span className='nav-text-two'>{item}</span>
+                                            </a>
+                                        </li>
+                                    );
+                                })}
+                            </ul>
+                        </div>
+                        <div>
+                            <button className='bg-c3 font-questrial text-lg button 2xl:text-xl fade-right'>
+                                Book a call +
+                            </button>
+                        </div>
                     </div>
 
                 </nav>
