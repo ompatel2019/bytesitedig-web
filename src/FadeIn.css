@@ -1,166 +1,210 @@
 /* General fade-in */
 .fade-element {
+  opacity: 0;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  visibility: hidden; /* Hide the element initially */
+}
+
+.fade-element.fade-in {
+  opacity: 1;
+  visibility: visible; /* Show the element when animation starts */
+}
+
+/* Fade from the left */
+@keyframes fade-left {
+  from {
+    transform: translateX(-50px);
     opacity: 0;
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
   }
-  
-  .fade-element.fade-in {
+  to {
+    transform: translateX(0);
     opacity: 1;
   }
-  
-  /* Fade from the left */
-  @keyframes fade-left {
-    from {
-      transform: translateX(-50px);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
+}
+
+.fade-left.fade-in {
+  animation: fade-left 1s ease-in-out forwards;
+}
+
+/* Fade from the right */
+@keyframes fade-right {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
   }
-  
-  .fade-left.fade-in {
-    animation: fade-left 1s ease-in-out forwards;
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
-  
-  /* Fade from the right */
-  @keyframes fade-right {
-    from {
-      transform: translateX(50px);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
+}
+
+.fade-right.fade-in {
+  animation: fade-right 1s ease-in-out forwards;
+}
+
+/* Enter from the right */
+@keyframes enter-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
   }
-  
-  .fade-right.fade-in {
-    animation: fade-right 1s ease-in-out forwards;
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
-  
-  /* Enter from the right */
-  @keyframes enter-right {
-    from {
-      transform: translateX(100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
+}
+
+.enter-right.fade-in {
+  animation: enter-right 1s ease-in-out forwards;
+}
+
+/* Enter from the left */
+@keyframes enter-left {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
   }
-  
-  .enter-right.fade-in {
-    animation: enter-right 1s ease-in-out forwards;
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
-  
-  /* Enter from the left */
-  @keyframes enter-left {
-    from {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
+}
+
+.enter-left.fade-in {
+  animation: enter-left 1s ease-in-out forwards;
+}
+
+/* Sequential fade-in (fadeIn-1 to fadeIn-6) */
+@keyframes fade-in-sequence {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+    visibility: hidden; /* Ensure it's hidden initially */
   }
-  
-  .enter-left.fade-in {
-    animation: enter-left 1s ease-in-out forwards;
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible; /* Ensure it's visible at the end */
   }
-  
-  /* Sequential fade-in (fadeIn-1 to fadeIn-6) */
-  @keyframes fade-in-sequence {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+}
+
+.fadeIn-1.fade-in {
+  animation: fade-in-sequence 1s ease-in-out 0.1s forwards;
+}
+
+.fadeIn-2.fade-in {
+  animation: fade-in-sequence 1s ease-in-out 0.2s forwards;
+}
+
+.fadeIn-3.fade-in {
+  animation: fade-in-sequence 1s ease-in-out 0.3s forwards;
+}
+
+.fadeIn-4.fade-in {
+  animation: fade-in-sequence 1s ease-in-out 0.4s forwards;
+}
+
+.fadeIn-5.fade-in {
+  animation: fade-in-sequence 1s ease-in-out 0.5s forwards;
+}
+
+.fadeIn-6.fade-in {
+  animation: fade-in-sequence 1s ease-in-out 0.6s forwards;
+}
+
+/* Normal fade-in */
+@keyframes fade {
+  from {
+    opacity: 0;
+    visibility: hidden;
   }
-  
-  .fadeIn-1.fade-in {
-    animation: fade-in-sequence 1s ease-in-out 0.1s forwards;
+  to {
+    opacity: 1;
+    visibility: visible;
   }
-  
-  .fadeIn-2.fade-in {
-    animation: fade-in-sequence 1s ease-in-out 0.2s forwards;
-  }
-  
-  .fadeIn-3.fade-in {
-    animation: fade-in-sequence 1s ease-in-out 0.3s forwards;
-  }
-  
-  .fadeIn-4.fade-in {
-    animation: fade-in-sequence 1s ease-in-out 0.4s forwards;
-  }
-  
-  .fadeIn-5.fade-in {
-    animation: fade-in-sequence 1s ease-in-out 0.5s forwards;
-  }
-  
-  .fadeIn-6.fade-in {
-    animation: fade-in-sequence 1s ease-in-out 0.6s forwards;
-  }
-  
-  /* Normal fade-in */
-  @keyframes fade {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  .fade.fade-in {
-    animation: fade 1s ease-in-out forwards;
-  }
-  
+}
+
+.fade.fade-in {
+  animation: fade 1s ease-in-out forwards;
+}
+
 /* Fade-up */
 @keyframes fade-up {
-    from {
-      opacity: 0;
-      transform: translateY(20px); /* Element starts 20px below */
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0); /* Moves to normal position */
-    }
-  }
-  
-  .fade-up.fade-in {
-    animation: fade-up 1s ease-in-out forwards;
-  }
-  
-  /* Fade-down */
-  @keyframes fade-down {
-    from {
-      opacity: 0;
-      transform: translateY(-20px); /* Element starts 20px above */
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0); /* Moves to normal position */
-    }
-  }
-  
-  .fade-down.fade-in {
-    animation: fade-down 1s ease-in-out forwards;
-  }
-  
-  /* Ensure the fade-element class is still present */
-  .fade-element {
+  from {
     opacity: 0;
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    transform: translateY(20px); /* Element starts 20px below */
+    visibility: hidden;
   }
-  
-  .fade-element.fade-in {
+  to {
     opacity: 1;
+    transform: translateY(0); /* Moves to normal position */
+    visibility: visible;
   }
-  
+}
+
+.fade-up.fade-in {
+  animation: fade-up 1s ease-in-out forwards;
+}
+
+/* Fade-down */
+@keyframes fade-down {
+  from {
+    opacity: 0;
+    transform: translateY(-20px); /* Element starts 20px above */
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Moves to normal position */
+    visibility: visible;
+  }
+}
+
+.fade-down.fade-in {
+  animation: fade-down 1s ease-in-out forwards;
+}
+
+/* Ensure the fade-element class is still present */
+.fade-element {
+  opacity: 0;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  visibility: hidden; /* Keep hidden until animation starts */
+}
+
+.fade-element.fade-in {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/* Fade-up */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Element starts 20px below */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Moves to normal position */
+  }
+}
+
+.fade-up.fade-in {
+  animation: fade-up 1s ease-in-out forwards;
+}
+
+/* Fade-down */
+@keyframes fade-down {
+  from {
+    opacity: 0;
+    transform: translateY(-20px); /* Element starts 20px above */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Moves to normal position */
+  }
+}
+
+.fade-down.fade-in {
+  animation: fade-down 1s ease-in-out forwards;
+}

@@ -82,7 +82,7 @@ const Hero = () => {
         Find a place on the internet within 14 days.
       </p>
 
-      <div className='flex flex-row font-mono gap-2 mt-[20px] md:mt-[40px] justify-center fade-element'>
+      <div className='flex flex-row font-mono gap-2 mt-[20px] md:mt-[40px] justify-center fade-down'>
         <button className='button-2 max-md:text-sm'>
           {buttonText}
         </button>
@@ -92,7 +92,7 @@ const Hero = () => {
         </button>
       </div>
 
-      <div className='flex justify-center pt-8 pb-2 fade'>
+      <div className='flex justify-center pt-8 pb-2 fade-up'>
         <Lottie className='w-16 max-md:w-12' animationData={scrollAnimation} loop={true} />
       </div>
 
