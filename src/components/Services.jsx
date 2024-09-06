@@ -50,9 +50,9 @@ const Services = () => {
       </div>
 
       {/* Service Cards Grid */}
-      <div className='grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-8 py-8'>
+      <div className='grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-8 py-8'>
         {services.map((service, index) => {
-          const serviceClass = `border-2 border-gray-400 px-6 pt-12 rounded-lg flex flex-col justify-center items-center space-y-6 nav-item fadeIn-${index + 1}`;
+          const serviceClass = `border-2 border-gray-400 px-6 pt-12 rounded-lg flex flex-col justify-center items-center space-y-6 nav-item fade-left`;
           return (
             <div key={index} className={serviceClass}>
               {/* Active Badge */}
