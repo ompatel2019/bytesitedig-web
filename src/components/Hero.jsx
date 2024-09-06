@@ -17,7 +17,7 @@ const Hero = () => {
   ];
 
   const [displayTestimonials, setDisplayTestimonials] = useState(testimonials);
-  const [buttonText, setButtonText] = useState('Start a project');
+  const [buttonText, setButtonText] = useState('Get Started');
   const typewriterRef = useRef(null);
 
   useEffect(() => {
@@ -27,7 +27,7 @@ const Hero = () => {
         setButtonText('Book a call')
       } else {
         setDisplayTestimonials(testimonials);
-        setButtonText('Start a project')
+        setButtonText('Get Started')
       }
     };
 
@@ -69,7 +69,7 @@ const Hero = () => {
         {displayTestimonials.map((testimonial, index) => (
           <div className='flex flex-col items-center w-56' key={index}>
             <img className='2xl:w-48 max-md:w-24' src={fiveStars} alt="" />
-            <p className='2xl:text-lg max-md:text-sm'>{testimonial}</p>
+            <p className='2xl:text-lg max-md:text-[12px]'>{testimonial}</p>
           </div>
         ))}
       </div>
@@ -78,7 +78,7 @@ const Hero = () => {
         WE OFFER SOLUTIONS <br /> <span ref={typewriterRef}></span><span id='cursor' className='blinking-cursor'>|</span>.
       </h1>
 
-      <p className='font-mono text-sm md:text-h7 xl:text-h6 mt-[16px] md:mt-[32px] text-white text-center'>
+      <p className='font-mono text-xl max-md:text-[12px] xl:text-h6 mt-[16px] md:mt-[32px] text-white text-center'>
         Find a place on the internet within 14 days.
       </p>
 
