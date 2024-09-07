@@ -24,28 +24,33 @@ const Hero = () => {
     const handleResize = () => {
       if (window.innerWidth <= 768) {
         setDisplayTestimonials(testimonials.slice(0, -1));
-        setButtonText('Book a call')
+        setButtonText('Book a call');
       } else {
         setDisplayTestimonials(testimonials);
-        setButtonText('Get Started')
+        setButtonText('Get Started');
       }
     };
 
-    handleResize();
-    window.addEventListener('resize', handleResize);
+    // Debounce the resize event for performance
+    const debounceResize = () => {
+      let timer;
+      return () => {
+        clearTimeout(timer);
+        timer = setTimeout(handleResize, 150);
+      };
+    };
+
+    window.addEventListener('resize', debounceResize());
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener('resize', debounceResize());
     };
   }, [testimonials]);
 
   useEffect(() => {
     const words = ['TO DESIGN', 'TO DEVELOP', 'IN SEO'];
 
-    // Main timeline
-    let mainTimeline = gsap.timeline({
-      repeat: -1,
-    });
+    let mainTimeline = gsap.timeline({ repeat: -1 });
 
     words.forEach(word => {
       let textTimeline = gsap.timeline({
@@ -61,6 +66,9 @@ const Hero = () => {
 
       mainTimeline.add(textTimeline);
     });
+
+    // Cleanup animation on unmount
+    return () => mainTimeline.kill();
   }, []);
 
   return (
@@ -82,12 +90,12 @@ const Hero = () => {
         Find a place on the internet within 14 days.
       </p>
 
-      <div className='flex flex-row font-mono gap-2 mt-[20px] md:mt-[40px] justify-center fade-down'>
-        <button className='button-2 max-md:text-sm'>
+      <div className='flex flex-row font-mono gap-2 mt-[20px] md:mt-[40px] justify-center fade-down max-md:text-sm'>
+        <button className='button-2'>
           {buttonText}
         </button>
 
-        <button className='button-2 max-md:text-sm'>
+        <button className='button-2'>
           Services
         </button>
       </div>
