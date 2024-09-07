@@ -20,9 +20,9 @@ export default function App() {
     <LetsMakeItHappen/>
     <Services/>
     <AboutUs/>
+    <Portfolio/>
     
     {/* 
-    <Portfolio/>
     <WhyChooseUs/>
     <Form/>
     <Faq/>
