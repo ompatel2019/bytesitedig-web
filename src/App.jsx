@@ -19,9 +19,9 @@ export default function App() {
     <Hero/>
     <LetsMakeItHappen/>
     <Services/>
+    <AboutUs/>
     
     {/* 
-    <AboutUs/>
     <Portfolio/>
     <WhyChooseUs/>
     <Form/>

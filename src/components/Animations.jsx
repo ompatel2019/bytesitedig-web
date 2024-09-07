@@ -13,7 +13,7 @@ const useFadeIn = () => {
       threshold: 0.1 // Trigger when 10% of the element is visible
     };
 
-    const observer = new IntersectionObserver((entries, observer) => {
+    const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add('fade-in'); // Add the fade-in class to trigger the animation

@@ -228,7 +228,7 @@ body {
   white-space: nowrap; /* Prevent text wrapping */
   font-size: 4vw; /* Responsive font size */
   font-weight: 600;
-  animation: slide 10s linear infinite; /* Continuous sliding animation */
+  animation: slide 50s linear infinite; /* Continuous sliding animation */
 }
 
 /* Keyframes for seamless sliding */

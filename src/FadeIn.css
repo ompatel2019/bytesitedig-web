@@ -1,13 +1,14 @@
 /* General fade-in */
 .fade-element {
   opacity: 0;
-  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-  visibility: hidden; /* Hide the element initially */
+  visibility: hidden; /* Hidden initially */
+  transition: opacity 1s ease-in-out, visibility 0s 1s; /* Delays visibility change */
 }
 
 .fade-element.fade-in {
   opacity: 1;
-  visibility: visible; /* Show the element when animation starts */
+  visibility: visible; /* Set visible when fading in */
+  transition: opacity 1s ease-in-out, visibility 0s 0s; /* Immediately make it visible */
 }
 
 /* Fade from the left */
@@ -79,12 +80,12 @@
   from {
     opacity: 0;
     transform: translateY(20px);
-    visibility: hidden; /* Ensure it's hidden initially */
+    visibility: hidden;
   }
   to {
     opacity: 1;
     transform: translateY(0);
-    visibility: visible; /* Ensure it's visible at the end */
+    visibility: visible;
   }
 }
 
@@ -167,44 +168,19 @@
 /* Ensure the fade-element class is still present */
 .fade-element {
   opacity: 0;
-  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
   visibility: hidden; /* Keep hidden until animation starts */
+  transition: opacity 1s ease-in-out, visibility 0s 1s; /* Visibility delay to ensure smooth transition */
 }
 
 .fade-element.fade-in {
   opacity: 1;
-  visibility: visible;
+  visibility: visible; /* Show the element when animation starts */
+  transition: opacity 1s ease-in-out, visibility 0s 0s; /* Immediate visibility */
 }
 
 
-/* Fade-up */
-@keyframes fade-up {
-  from {
-    opacity: 0;
-    transform: translateY(20px); /* Element starts 20px below */
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0); /* Moves to normal position */
-  }
-}
 
-.fade-up.fade-in {
-  animation: fade-up 1s ease-in-out forwards;
-}
 
-/* Fade-down */
-@keyframes fade-down {
-  from {
-    opacity: 0;
-    transform: translateY(-20px); /* Element starts 20px above */
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0); /* Moves to normal position */
-  }
-}
 
-.fade-down.fade-in {
-  animation: fade-down 1s ease-in-out forwards;
-}
+
+
