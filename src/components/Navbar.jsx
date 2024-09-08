@@ -7,11 +7,11 @@ const Navbar = () => {
 
     return (
         <>
-            <div id='home' className='bg-c1 sticky top-0 z-50'>
+            <div id='' className='bg-c1 sticky top-0 z-50'>
                 <nav className='max-md:hidden 2xl:px-[160px] xl:px-[96px] lg:px-[72px] md:px-[24px] sm:px-[16px] max-sm:px-[16px] py-[32px] pt-[40px] max-sm:py-[24px] flex justify-between items-center bg-c1'>
                     <div>
                         <div className="group">
-                            <img className="w-16 max-sm:w-12 fade-left" src={logo} alt="Bytesite digital logo" />
+                            <img className="w-16 max-sm:w-12 fade-left rotator" src={logo} alt="Bytesite digital logo" />
                         </div>
                     </div>
 
