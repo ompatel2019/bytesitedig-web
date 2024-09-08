@@ -28,7 +28,7 @@ const Portfolio = () => {
               </p>
             </div>
           </div>
-        <div className='max-md:block grid grid-cols-2 lg:gap-12 md:gap-8 2xl:px-[120px]'> 
+        <div className='max-sm:block grid grid-cols-2 lg:gap-12 md:gap-8 2xl:px-[120px]'> 
 
           <div className='space-y-12'>
             <div className='space-y-4 fade-left'>

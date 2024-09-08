@@ -12,7 +12,7 @@ const AboutUs = () => {
   ];
 
   return (
-    <div className='2xl:px-[160px] 2xl:py-[56px] xl:px-[96px] lg:px-[72px] md:px-[24px] sm:px-[16px] max-sm:px-[16px] max-sm:pl-[4px] py-[96px] max-md:py-[40px] bg-c1'>
+    <div className='2xl:px-[160px] 2xl:py-[56px] xl:px-[96px] lg:px-[72px] md:px-[24px] sm:px-[16px] max-sm:px-[16px] max-sm:pl-[4px] py-[96px] max-md:py-[8px] bg-c1'>
       <div className='grid grid-cols-3 space-x-12 max-lg:space-x-4 max-md:grid-cols-1 space-y-4'>
         {/* Image block */}
         <div className='fade-up max-md:order-1 max-md:hidden'>
@@ -29,20 +29,20 @@ const AboutUs = () => {
             <img className='cover h-full rounded-lg' src={headShot} alt="" />
           </div>
         </div>
-          <p className='font-dm-sans text-c4 text-h5 max-md:text-h7 max-lg:text-h6'>
+          <p className='font-dm-sans text-c4 text-h5 font-light max-sm:text-h7 max-lg:text-h6'>
             At Bytesite Digital, we found many small businesses still lack an online presence, and website costs are often too high. We're here to close that gap by providing tailored, affordable website solutions, ensuring businesses get exactly what they need without overpaying.
           </p>
 
-          <div className='flex space-x-8 max-md:space-x-2'>
+          <div className='flex space-x-8 max-sm:space-x-2 max-md:space-x-8'>
             {stats.map((stat, index) => (
               <div
                 key={index}
-                className={`text-c4 space-y-1 border-r-gray-400 md:pr-6 max-md:pr-2 ${
+                className={`text-c4 space-y-1 border-r-gray-400 pr-6 max-sm:pr-2 ${
                   index < stats.length - 1 ? 'border-r-[2px]' : '' 
                 }`}
               >
-                <h3 className='font-dm-mono text-h5 font-black max-md:text-h7'>{stat.title}</h3>
-                <p className='font-questrial max-md:text-[10px] md:text-h7 lg:text-h6'>{stat.description}</p>
+                <h3 className='font-dm-mono text-h5 font-black max-sm:text-h7'>{stat.title}</h3>
+                <p className='font-questrial max-sm:text-[10px] text-h7 lg:text-h6'>{stat.description}</p>
               </div>
             ))}
           </div>
