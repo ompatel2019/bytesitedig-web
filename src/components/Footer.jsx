@@ -2,13 +2,11 @@ import React from 'react';
 import emailLogo from '../images/emailDark.svg';
 import phoneLogo from '../images/phoneDark.svg';
 import locationLogo from '../images/locationDark.svg';
-import useFadeIn from './Animations.jsx'; // Import the custom fade-in hook
 import instagram from '../images/instagram.svg';
 import linkedin from '../images/linkedin.svg';
 import tiktok from '../images/tiktok.svg';
 
 const Footer = () => {
-  useFadeIn(); // Apply the fade-in hook
   
   const socialIcons = [
     { src: instagram, alt: "Instagram" },
@@ -38,9 +36,9 @@ const Footer = () => {
   ];
 
   return (
-    <div id='footer' className='2xl:px-[160px] 2xl:py-[96px] 2xl:pb-[16px] xl:px-[96px] lg:px-[72px] md:px-[24px] sm:px-[16px] max-sm:px-[16px] py-[48px] lg:pb-[96px] bg-c2'>
+    <div id='footer' className='2xl:px-[160px] 2xl:py-[96px] 2xl:pb-[16px] xl:px-[96px] lg:px-[72px] md:px-[24px] sm:px-[16px] max-sm:px-[16px] py-[48px] bg-c2'>
       <div className='flex flex-col space-y-12 max-md:space-y-6 max-sm:space-y-2'>
-        <div className='flex justify-between max-sm:items-center'>
+        <div className='flex justify-between max-sm:items-center max-sm:gap-2'>
           <div className='flex gap-4'>
             <div className='space-y-2 flex flex-col justify-around'>
               {socialIcons.map((icon, index) => (
@@ -56,7 +54,7 @@ const Footer = () => {
             {information.map((item, index) => (
               <a key={index} href={item.link} className="flex gap-2 items-center">
                 <img className='w-8 h-8 max-sm:w-4' src={item.logo} alt={item.alt} />
-                <p className='text-c4 font-dm-sans text-h6 max-md:text-h7 max-sm:text-[12px]'>{item.information}</p>
+                <p className='text-c4 font-dm-sans text-h6 max-md:text-h7 max-sm:text-[10px]'>{item.information}</p>
               </a>
             ))}
           </div>

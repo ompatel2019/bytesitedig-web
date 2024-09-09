@@ -17,7 +17,7 @@ const AboutUs = () => {
         {/* Image block */}
         <div className='fade-up max-md:order-1 max-md:hidden'>
           <div className='w-full h-full rounded-lg'>
-            <img className='cover h-full rounded-lg' src={headShot} alt="" />
+            <img className='cover h-full rounded-lg' src='' alt="" />
           </div>
         </div>
 
@@ -26,7 +26,7 @@ const AboutUs = () => {
           <h2 className='font-dm-mono text-c4 text-h3 max-md:text-h5'>03-ABOUT US</h2>
         <div className='fade-up max-md:order-1 md:hidden'>
           <div className='w-full h-full rounded-lg'>
-            <img className='cover h-full rounded-lg' src={headShot} alt="" />
+            <img className='cover h-full rounded-lg' src='' alt="" />
           </div>
         </div>
           <p className='font-dm-sans text-c4 text-h5 font-light max-sm:text-h7 max-lg:text-h6'>

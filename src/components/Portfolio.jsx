@@ -1,7 +1,7 @@
 import React from 'react'
 import useFadeIn from './Animations.jsx'; 
 import iclLogo from '../images/iclLogo.png'
-import isolvePlumbingLogo from '../images/isolvePlumbingLogo.jpeg'
+import isolvePlumbingLogo from '../images/isolveLogo2.png'
 import a1educationLogo from '../images/a1educationLogo.png'
 import rgbplumbingLogo from '../images/RgbLogo.svg'
 import embarkLogo from '../images/embarkLogo.svg'
@@ -123,7 +123,7 @@ const Portfolio = () => {
             <div className='space-y-4 fade-right max-md:text-center'>
               <a href="https://isolveplumbing.netlify.app/" target="_blank" rel="noopener noreferrer">
                 <div className='border-4 border-[#606060] h-[24rem] max-md:h-[15rem] rounded-2xl hover:scale-105 transition-transform flex justify-center items-center'>
-                  <img className='' src='' alt="" />
+                  <img className='w-24 md:w-56' src={isolvePlumbingLogo} alt="" />
                 </div>
               </a>
 
