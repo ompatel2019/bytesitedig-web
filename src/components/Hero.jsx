@@ -91,13 +91,17 @@ const Hero = () => {
       </p>
 
       <div className='flex flex-row font-mono gap-2 mt-[20px] md:mt-[40px] justify-center fade-down max-md:text-sm'>
-        <button className='button-2'>
-          {buttonText}
-        </button>
+        <a href="#contact">
+          <button className='button-2'>
+            {buttonText}
+          </button>
+        </a>
 
-        <button className='button-2'>
-          Services
-        </button>
+        <a href="#services">
+          <button className='button-2'>
+            Services
+          </button>
+        </a>
       </div>
 
       <div className='flex justify-center pt-8 pb-2 fade-up'>

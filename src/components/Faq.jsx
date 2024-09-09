@@ -20,7 +20,7 @@ const Faq = () => {
     },
     {
       question: "How long does it take to develop a website?",
-      answer: "The development of a website depends on the client as well, depending on how quickly they review designs and provide feedback. If a client is responsive, a website can most definitely be finished within 2 weeks."
+      answer: "The development of a website depends can be done within 2 weeks. However, it also depends on how responsive the client is, how quickly they review designs and provide feedback. If a client is responsive, a website can most definitely be finished within 2 weeks."
     },
     {
       question: "What technologies do you use to build websites?",
@@ -33,19 +33,19 @@ const Faq = () => {
   };
 
   return (
-    <div id='faq' className='2xl:px-[160px] 2xl:py-[56px] 2xl:pb-[16px] xl:px-[96px] lg:px-[72px] md:px-[24px] sm:px-[16px] max-sm:px-[16px] max-sm:py-[32px] py-[96px] lg:pb-[96px] bg-c2'>
+    <div id='faqs' className='2xl:px-[160px] 2xl:py-[56px] 2xl:pb-[16px] xl:px-[96px] lg:px-[72px] md:px-[24px] sm:px-[16px] max-sm:px-[16px] max-sm:py-[32px] py-[96px] lg:pb-[96px] bg-c2'>
       <h2 className='text-center font-medium font-dm-mono text-[#fafafa] text-h3 max-sm:text-h5 mb-2'>07 - FAQ</h2>
       <p className='font-dm-sans text-h4 max-sm:text-h7 font-medium text-[#fafafa] text-center'>Your questions, answered.</p>
       {faqs.map((faq, index) => (
         <div key={index} className='space-y-4 py-4'>
-          <div className='font-questrial text-c4 w-full py-8 max-md:py-6 border-b-2 flex flex-col gap-4'>
+          <div className='font-questrial w-full py-8 max-md:py-6 border-b-2 flex flex-col gap-4'>
             <div className='flex max-md:items-start justify-between'>
-              <h3 className='text-h5 max-md:text-h7'>{index + 1}. {faq.question}</h3>
+              <h3 className='text-h5 max-md:text-h7 text-c4'>{index + 1}. {faq.question}</h3>
               <img onClick={() => toggleQuestion(index)} className='max-md:w-[20px] cursor-pointer' src={activeQuestion === index ? minus : plus} alt="toggle" />
             </div>
             {activeQuestion === index && (
               <div>
-                <p className='text-h6 max-md:text-[12px] mb-4 max-md:mb-2'>
+                <p className='text-h6 max-md:text-[12px] mb-4 max-md:mb-2 text-gray-300'>
                   {faq.answer}
                 </p>
               </div>

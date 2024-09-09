@@ -29,7 +29,7 @@ const Form = () => {
 
   return (
     <div>
-      <div id='pricing' className='2xl:px-[160px] 2xl:py-[56px] 2xl:pb-[16px] xl:px-[96px] lg:px-[72px] md:px-[24px] sm:px-[16px] max-sm:px-[16px] py-[48px] lg:pb-[96px] bg-[#fafafa]'>
+      <div id='contact' className='2xl:px-[160px] 2xl:py-[56px] 2xl:pb-[16px] xl:px-[96px] lg:px-[72px] md:px-[24px] sm:px-[16px] max-sm:px-[16px] py-[48px] lg:pb-[96px] bg-[#fafafa]'>
         <h2 className='max-sm:text-left font-medium font-dm-mono text-c2 text-h3 max-sm:text-h5 text-right mb-2'>06-CONTACT FORM</h2>
 
         <div className='flex flex-col md:flex-row md:grid grid-cols-2 gap-16 max-sm:gap-4'>
