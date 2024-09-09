@@ -12,7 +12,7 @@ const Hero = () => {
   useFadeIn(); 
   const testimonials = [
     "Creative solutions, timely delivery, and excellent attention to detail!",
-    "Exceptional web design and seamless communication throughout the process!",
+    "Exceptional web design and communication throughout the process!",
     "Om's expertise brought my vision to life—highly recommended!"
   ];  
 
@@ -72,7 +72,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div id='home' className='2xl:px-[160px] 2xl:py-[56px] 2xl:pb-[16px] xl:px-[96px] lg:px-[72px] md:px-[24px] sm:px-[16px] max-sm:px-[16px] pt-[24px] bg-c1'>
+    <div id='home' className='2xl:px-[160px] 2xl:py-[48px] 2xl:pb-[16px] xl:px-[96px] lg:px-[72px] md:px-[24px] sm:px-[16px] max-sm:px-[16px] pt-[24px] bg-c1'>
       <div className='flex text-center text-white font-sans space-x-14 max-md:space-x-4 justify-center'>
         {displayTestimonials.map((testimonial, index) => (
           <div className='flex flex-col items-center w-56 font-questrial' key={index}>
