@@ -2,7 +2,7 @@ import React from 'react';
 import emailLogo from '../images/emailDark.svg';
 import phoneLogo from '../images/phoneDark.svg';
 import locationLogo from '../images/locationDark.svg';
-import instagram from '../images/instagram.svg';
+import instagram from '../images/Instagram.svg';
 import linkedin from '../images/linkedin.svg';
 import tiktok from '../images/tiktok.svg';
 
