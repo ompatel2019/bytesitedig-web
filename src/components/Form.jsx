@@ -2,8 +2,10 @@ import React from 'react';
 import emailLogo from '../images/email.svg';
 import phoneLogo from '../images/phone.svg';
 import locationLogo from '../images/location.svg';
+import useFadeIn from './Animations.jsx'; // Import the custom fade-in hook
 
 const Form = () => {
+  useFadeIn(); // Apply the fade-in hook
   const information = [
     {
       heading: 'Send a message',
@@ -30,9 +32,9 @@ const Form = () => {
   return (
     <div>
       <div id='contact' className='2xl:px-[160px] 2xl:py-[56px] 2xl:pb-[16px] xl:px-[96px] lg:px-[72px] md:px-[24px] sm:px-[16px] max-sm:px-[16px] py-[48px] lg:pb-[96px] bg-[#fafafa]'>
-        <h2 className='max-sm:text-left font-medium font-dm-mono text-c2 text-h3 max-sm:text-h5 text-right mb-2'>06-CONTACT FORM</h2>
+        <h2 className='max-sm:text-left font-medium font-dm-mono text-c2 text-h3 max-sm:text-h5 text-right mb-2 fade-right'>06-CONTACT FORM</h2>
 
-        <div className='flex flex-col md:flex-row md:grid grid-cols-2 gap-16 max-sm:gap-4'>
+        <div className='flex flex-col md:flex-row md:grid grid-cols-2 gap-16 max-sm:gap-4 fade-down'>
           <div className='bg-c2 p-12 rounded-lg space-y-4 max-sm:p-6 order-1 md:order-2'>
             <h3 className='text-c4 text-h5 max-sm:text-h6 font-dm-sans'>You’ve got ideas? We have the skills to convert them. Let’s put the pen to paper.</h3>
             <form action="" className='space-y-4 2xl:space-y-6'>
@@ -56,7 +58,7 @@ const Form = () => {
             </form>
           </div>
 
-          <div className='flex flex-col justify-around order-2 md:order-1 max-sm:items-start'>
+          <div className='flex flex-col justify-around order-2 md:order-1 max-sm:items-start fade-up'>
             <h3 className='text-h4 font-medium max-sm:text-[24px] max-sm:font-semibold font-dm-sans'>97% Of Consumers Go Online To Find Information about local Businesses, where will they go to find out more about you?</h3>
             <p className='text-h5 max-sm:hidden font-questrial'>Get in touch with us so these customers can see what you’re really about.</p>
 

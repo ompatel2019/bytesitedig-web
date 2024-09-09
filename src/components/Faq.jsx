@@ -1,8 +1,10 @@
 import React, { useState } from 'react'; // Corrected import statement
 import plus from '../images/plus.svg';
 import minus from '../images/minus.svg';
+import useFadeIn from './Animations.jsx'; // Import the custom fade-in hook
 
 const Faq = () => {
+  useFadeIn(); // Apply the fade-in hook
   const [activeQuestion, setActiveQuestion] = useState(null); // Track the active question
   
   const faqs = [
@@ -38,10 +40,10 @@ const Faq = () => {
       <p className='font-dm-sans text-h4 max-sm:text-h7 font-medium text-[#fafafa] text-center'>Your questions, answered.</p>
       {faqs.map((faq, index) => (
         <div key={index} className='space-y-4 py-4'>
-          <div className='font-questrial w-full py-8 max-md:py-6 border-b-2 flex flex-col gap-4'>
+          <div className={`font-questrial w-full py-8 max-md:py-6 border-b-2 flex flex-col gap-4 fadeIn-${index + 1}`}>
             <div className='flex max-md:items-start justify-between'>
               <h3 className='text-h5 max-md:text-h7 text-c4'>{index + 1}. {faq.question}</h3>
-              <img onClick={() => toggleQuestion(index)} className='max-md:w-[20px] cursor-pointer' src={activeQuestion === index ? minus : plus} alt="toggle" />
+              <img onClick={() => toggleQuestion(index)} className='max-md:w-[20px] cursor-pointer hover:scale-110 transition-all' src={activeQuestion === index ? minus : plus} alt="toggle" />
             </div>
             {activeQuestion === index && (
               <div>

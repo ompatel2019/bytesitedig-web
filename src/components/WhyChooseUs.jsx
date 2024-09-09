@@ -8,10 +8,12 @@ const WhyChooseUs = () => {
   return (
     <>
       <div id='pricing' className='2xl:px-[160px] 2xl:py-[56px] 2xl:pb-[16px] xl:px-[96px] lg:px-[72px] md:px-[24px] sm:px-[16px] max-sm:px-[16px] pt-[48px] lg:py-[96px] bg-[#fafafa]'>
-      <h2 className='max-sm:text-left font-medium font-dm-mono text-c2 text-h3 max-sm:text-h5 text-left mb-2'>05-WHY US,NOT THEM?</h2>
-      <p className='font-dm-sans text-h4 max-sm:text-h7 font-medium'>An average website for a small business can range from $2000 - $5000 in Australia. <span className='text-[#606060]'>We do it cheaper, we do it better. </span></p>
+      <div className='fade-down'>
+        <h2 className='max-sm:text-left font-medium font-dm-mono text-c2 text-h3 max-sm:text-h5 text-left mb-2'>05-WHY US,NOT THEM?</h2>
+        <p className='font-dm-sans text-h4 max-sm:text-h7 font-medium'>An average website for a small business can range from $2000 - $5000 in Australia. <span className='text-[#606060]'>We do it cheaper, we do it better. </span></p>
+      </div>
 
-      <div className='flex justify-center py-8'>
+      <div className='flex justify-center py-8 fade-up'>
 
         <div className='bg-white border-2 border-c2 rounded-lg p-10 flex font-dm-sans font-semibold lg:text-h5 max-sm:text-[9px] max-sm:py-2 max-sm:px-0'>
           <div className='p-8 space-y-2 max-sm:p-4'>
