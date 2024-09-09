@@ -14,20 +14,17 @@ import Footer from './components/Footer'
 export default function App() {
   return (
     <>
-    <Navbar/>
-    <NavbarMob/>
-    <Hero/>
-    <LetsMakeItHappen/>
-    <Services/>
-    <AboutUs/>
-    <Portfolio/>
-    <WhyChooseUs/>
-    <Form/>
-    <Faq/>
-    
-    {/* 
-    <Footer/> 
-    */}
+      <Navbar/>
+      <NavbarMob/>
+      <Hero/>
+      <LetsMakeItHappen/>
+      <Services/>
+      <AboutUs/>
+      <Portfolio/>
+      <WhyChooseUs/>
+      <Form/>
+      <Faq/>
+      <Footer/> 
     </>
   )
 }
