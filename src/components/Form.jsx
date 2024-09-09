@@ -29,7 +29,7 @@ const Form = () => {
 
   return (
     <div>
-      <div id='pricing' className='2xl:px-[160px] 2xl:py-[56px] 2xl:pb-[16px] xl:px-[96px] lg:px-[72px] md:px-[24px] sm:px-[16px] max-sm:px-[16px] pt-[48px] lg:pb-[96px] bg-[#fafafa]'>
+      <div id='pricing' className='2xl:px-[160px] 2xl:py-[56px] 2xl:pb-[16px] xl:px-[96px] lg:px-[72px] md:px-[24px] sm:px-[16px] max-sm:px-[16px] py-[48px] lg:pb-[96px] bg-[#fafafa]'>
         <h2 className='max-sm:text-left font-medium font-dm-mono text-c2 text-h3 max-sm:text-h5 text-right mb-2'>06-CONTACT FORM</h2>
 
         <div className='flex flex-col md:flex-row md:grid grid-cols-2 gap-16 max-sm:gap-4'>
@@ -37,11 +37,11 @@ const Form = () => {
             <h3 className='text-c4 text-h5 max-sm:text-h6 font-dm-sans'>You’ve got ideas? We have the skills to convert them. Let’s put the pen to paper.</h3>
             <form action="" className='space-y-4 2xl:space-y-6'>
               <div className='flex space-x-4 max-sm:space-x-0 max-sm:flex-col max-sm:space-y-4'>
-                <input className='2xl:p-3 bg-transparent rounded-md border-2 border-c4 p-2 px-4 font-dm-mono w-full text-c4 max-sm:text-[12px]' type="text" placeholder='Full Name' required/>
-                <input className='2xl:p-3 bg-transparent rounded-md border-2 border-c4 p-2 px-4 font-dm-mono w-full text-c4 max-sm:text-[12px]' type="text" placeholder='Email' required/>
+                <input className='2xl:p-3 bg-transparent rounded-md border-2 border-c4 p-2 px-4 font-dm-mono w-full text-c4 max-sm:text-[12px] transition-all hover:pl-8 hover:pt-3' type="text" placeholder='Full Name' required/>
+                <input className='2xl:p-3 bg-transparent rounded-md border-2 border-c4 p-2 px-4 font-dm-mono w-full text-c4 max-sm:text-[12px] transition-all hover:pl-8 hover:pt-3' type="text" placeholder='Email' required/>
               </div>
-              <input className='2xl:p-3 bg-transparent rounded-md border-2 border-c4 p-2 px-4 font-dm-mono w-full text-c4 max-sm:text-[12px]' type="text" placeholder='Phone (Optional)'/>
-              <input className='2xl:p-3 bg-transparent rounded-md border-2 border-c4 py-2 px-4 font-dm-mono w-full text-c4 max-sm:text-[12px] align-top pb-32 2xl:pb-48' type="text" placeholder='A short message for us...' required/>
+              <input className='2xl:p-3 bg-transparent rounded-md border-2 border-c4 p-2 px-4 font-dm-mono w-full text-c4 max-sm:text-[12px] transition-all hover:pl-8 hover:pt-3' type="text" placeholder='Phone (Optional)'/>
+              <input className='2xl:p-3 bg-transparent rounded-md border-2 border-c4 py-2 px-4 font-dm-mono w-full text-c4 max-sm:text-[12px] align-top pb-32 2xl:pb-48 transition-all hover:pl-8 hover:pt-3' type="text" placeholder='A short message for us...' required/>
               
               <button className="animated-button font-dm-mono max-sm:text-[12px] max-sm:px-10">
                 <svg xmlns="http://www.w3.org/2000/svg" className="arr-2" viewBox="0 0 24 24">
@@ -56,7 +56,7 @@ const Form = () => {
             </form>
           </div>
 
-          <div className='flex flex-col justify-around order-2 md:order-1 max-sm:items-center'>
+          <div className='flex flex-col justify-around order-2 md:order-1 max-sm:items-start'>
             <h3 className='text-h4 font-medium max-sm:text-[24px] max-sm:font-semibold font-dm-sans'>97% Of Consumers Go Online To Find Information about local Businesses, where will they go to find out more about you?</h3>
             <p className='text-h5 max-sm:hidden font-questrial'>Get in touch with us so these customers can see what you’re really about.</p>
 

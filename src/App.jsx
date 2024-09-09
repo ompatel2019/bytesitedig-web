@@ -23,9 +23,9 @@ export default function App() {
     <Portfolio/>
     <WhyChooseUs/>
     <Form/>
+    <Faq/>
     
     {/* 
-    <Faq/>
     <Footer/> 
     */}
     </>
