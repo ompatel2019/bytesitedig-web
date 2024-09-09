@@ -37,7 +37,7 @@ const Services = () => {
       
       <div className='space-y-2'>
         <h2 className='font-dm-mono text-c4 text-h3 max-md:text-h5'>02-SERVICES</h2>
-        <p className='font-dm-sans text-c4 text-h5 max-md:text-h7'>
+        <p className='font-dm-sans text-c4 text-h4 max-md:text-h7'>
           We offer an array of services designed to help you effectively expand your brand in the digital realm. Our comprehensive solutions are tailored to enhance your online presence and drive growth.
         </p>
       </div>

@@ -7,9 +7,9 @@ const WhyChooseUs = () => {
   useFadeIn(); 
   return (
     <>
-      <div id='pricing' className='2xl:px-[160px] 2xl:py-[56px] 2xl:pb-[16px] xl:px-[96px] lg:px-[72px] md:px-[24px] sm:px-[16px] max-sm:px-[16px] pt-[48px] lg:py-[96px] bg-[#fafafa}'>
+      <div id='pricing' className='2xl:px-[160px] 2xl:py-[56px] 2xl:pb-[16px] xl:px-[96px] lg:px-[72px] md:px-[24px] sm:px-[16px] max-sm:px-[16px] pt-[48px] lg:py-[96px] bg-[#fafafa]'>
       <h2 className='max-sm:text-left font-medium font-dm-mono text-c2 text-h3 max-sm:text-h5 text-left mb-2'>05-WHY US,NOT THEM?</h2>
-      <p className='font-dm-sans text-h4 max-sm:text-h6 font-bold'>An average website for a small business can range from $2000 - $5000 in Australia. <span className='text-[#606060]'>We do it cheaper, we do it better. </span></p>
+      <p className='font-dm-sans text-h4 max-sm:text-h7 font-medium'>An average website for a small business can range from $2000 - $5000 in Australia. <span className='text-[#606060]'>We do it cheaper, we do it better. </span></p>
 
       <div className='flex justify-center py-8'>
 

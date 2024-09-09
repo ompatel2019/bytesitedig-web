@@ -362,3 +362,17 @@ body {
   opacity: 1;
 }
 
+
+/* .base-padding { 
+ /* when screen size >1536 i want px to be 200px, when screen size > 1280 i want px to be 120px, when screen size > 1024 i want px to be 96px when screen size > 768 i want px to be 64px when screen size < 640px i want px to be 16px 
+ .heading-1 
+  /* when screen size >1536 i want to be 200px, when screen size > 1280 i want px to be 120px, when screen size > 1024 i want px to be 96px when screen size > 768 i want px to be 64px when screen size < 640px i want px to be 16px */ 
+ 
+
+/*
+heading-1 is hero font 
+heading-2 is all the headings of different sections 
+heading-3 is all the sub-heading text of different sections 
+heading-4 is information text of different sections 
+heading-5 is stats fonts
+*/ 
