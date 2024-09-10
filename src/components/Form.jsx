@@ -65,8 +65,8 @@ const Form = () => {
 
   return (
     <div>
-      <div id='contact' className='2xl:px-[160px] 2xl:py-[56px] 2xl:pb-[16px] xl:px-[96px] lg:px-[72px] md:px-[24px] sm:px-[16px] max-sm:px-[16px] py-[48px] lg:pb-[96px] bg-[#fafafa]'>
-        <h2 className='max-sm:text-left font-medium font-dm-mono text-c2 text-h3 max-sm:text-h5 text-right mb-2 fade-right'>06-CONTACT FORM</h2>
+      <div id='contact' className='2xl:px-[160px] 2xl:py-[56px] 2xl:pb-[96px] xl:px-[96px] lg:px-[72px] md:px-[24px] sm:px-[16px] max-sm:px-[16px] py-[48px] lg:pb-[96px] bg-[#fafafa]'>
+        <h2 className='max-sm:text-left font-medium font-dm-mono text-c2 text-h3 max-sm:text-h5 text-right mb-2 max-md:mb-6 fade-right'>06-CONTACT FORM</h2>
 
         <div className='flex flex-col md:flex-row md:grid grid-cols-2 gap-16 max-sm:gap-4 fade-down'>
           <div className='bg-c2 p-12 rounded-lg space-y-4 max-sm:p-6 order-1 md:order-2'>
@@ -100,7 +100,7 @@ const Form = () => {
             <h3 className='text-h4 font-medium max-sm:text-[24px] max-sm:font-semibold font-dm-sans'>97% Of Consumers Go Online To Find Information about local Businesses, where will they go to find out more about you?</h3>
             <p className='text-h5 max-sm:hidden font-questrial'>Get in touch with us so these customers can see what you’re really about.</p>
 
-            <div className='flex flex-col max-md:flex-row max-sm:flex-col max-md:gap-2'>
+            <div className='flex flex-col max-md:hidden max-sm:flex-col max-md:gap-2'>
               {information.map((item, index) => (
                 <div key={index} className='flex gap-8 space-y-4 max-sm:gap-4 max-md:gap-2'>
                   <img className='w-8 max-sm:w-6' src={item.logo} alt={item.heading} />

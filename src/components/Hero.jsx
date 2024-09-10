@@ -83,7 +83,7 @@ const Hero = () => {
         ))}
       </div>
 
-      <h1 className='2xl:text-[120px] 2xl:leading-[120px] text-c4 text-h3 md:text-h2 xl:text-h1 xl:leading-[96px] max-sm:leading-[56px] mt-[24px] md:mt-[48px] text-center'>
+      <h1 className='2xl:text-[120px] 2xl:leading-[120px] text-c4 text-h3 md:text-h2 xl:text-h1 xl:leading-[96px] max-sm:leading-[56px] mt-[24px] md:mt-[32px] text-center'>
         WE OFFER SOLUTIONS <br /> <span ref={typewriterRef}></span><span id='cursor' className='blinking-cursor'>|</span>.
       </h1>
 

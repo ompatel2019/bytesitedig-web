@@ -12,7 +12,7 @@ const AboutUs = () => {
   ];
 
   return (
-    <div className='2xl:px-[160px] 2xl:py-[56px] xl:px-[96px] lg:px-[72px] md:px-[24px] sm:px-[16px] max-sm:px-[16px] max-sm:pl-[4px] py-[96px] max-md:py-[8px] bg-c1'>
+    <div className='2xl:px-[160px] 2xl:py-[56px] xl:px-[96px] lg:px-[72px] md:px-[24px] sm:px-[16px] max-sm:px-[16px] max-sm:pl-[4px] max-md:py-[8px] bg-c1'>
       <div className='grid grid-cols-3 space-x-12 max-lg:space-x-4 max-md:grid-cols-1 space-y-4'>
         {/* Image block */}
         <div className='fade-up max-md:order-1 max-md:hidden'>

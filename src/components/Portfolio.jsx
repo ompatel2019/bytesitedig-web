@@ -12,7 +12,7 @@ const Portfolio = () => {
   useFadeIn(); 
   return (
     <>
-      <div id='projects' className='2xl:px-[160px] 2xl:py-[56px] 2xl:pb-[16px] xl:px-[96px] lg:px-[72px] md:px-[24px] sm:px-[16px] max-sm:px-[16px] py-[48px] bg-c1'>
+      <div id='projects' className='2xl:px-[160px] lg:py-[80px] 2xl:pb-[16px] xl:px-[96px] lg:px-[72px] md:px-[24px] sm:px-[16px] max-sm:px-[16px] py-[48px] bg-c1'>
       <h2 className='max-md:text-left font-dm-mono text-c4 text-h3 max-md:text-h5 text-right fade-right lg:mb-12 mb-8 max-md:mb-2'>04-PORTFOLIO</h2>
 
       <div className='space-y-4 fade-right md:hidden mb-6'>
@@ -28,7 +28,8 @@ const Portfolio = () => {
               </p>
             </div>
           </div>
-        <div className='max-sm:block grid grid-cols-2 lg:gap-12 md:gap-8 2xl:px-[120px]'> 
+
+        <div className='max-sm:block grid grid-cols-2 lg:gap-12 md:gap-8 2xl:px-[120px] 2xl:mb-24'> 
 
           <div className='space-y-12'>
             <div className='space-y-4 fade-left'>
