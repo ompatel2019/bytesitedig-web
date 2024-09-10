@@ -5,6 +5,7 @@ import Lottie from 'lottie-react';
 import fiveStars from '../images/stars.svg';
 import scrollAnimation from '../assets/scroll.json'; 
 import useFadeIn from './Animations.jsx'; 
+import Redirect from './Redirect'; // Import the Redirect component
 
 gsap.registerPlugin(TextPlugin);
 
@@ -91,17 +92,17 @@ const Hero = () => {
       </p>
 
       <div className='flex flex-row font-mono gap-2 mt-[20px] md:mt-[40px] justify-center fade-down max-md:text-sm'>
-        <a href="#contact">
+        <Redirect to="contact">
           <button className='button-2'>
             {buttonText}
           </button>
-        </a>
+        </Redirect>
 
-        <a href="#services">
+        <Redirect to="services">
           <button className='button-2'>
             Services
           </button>
-        </a>
+        </Redirect>
       </div>
 
       <div className='flex justify-center pt-8 pb-2 fade-up'>

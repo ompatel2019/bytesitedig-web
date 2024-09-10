@@ -5,6 +5,7 @@ import locationLogo from '../images/locationDark.svg';
 import instagram from '../images/Instagram.svg';
 import linkedin from '../images/linkedin.svg';
 import tiktok from '../images/tiktok.svg';
+import Redirect from './Redirect'; // Import the Redirect component
 
 const Footer = () => {
   
@@ -37,7 +38,7 @@ const Footer = () => {
 
   return (
     <div id='footer' className='2xl:px-[160px] 2xl:py-[96px] 2xl:pb-[16px] xl:px-[96px] lg:px-[72px] md:px-[24px] sm:px-[16px] max-sm:px-[16px] py-[48px] bg-c2'>
-      <div className='flex flex-col space-y-12 max-md:space-y-6 max-sm:space-y-2'>
+      <div className='flex flex-col space-y-8 max-md:space-y-6 max-sm:space-y-2'>
         <div className='flex justify-between max-sm:items-center max-sm:gap-2'>
           <div className='flex gap-4'>
             <div className='space-y-2 flex flex-col justify-around'>
@@ -46,7 +47,10 @@ const Footer = () => {
               ))}
             </div>
             <h2 className='text-c4 font-dm-sans text-h4 md:leading-[3rem] max-sm:text-h7'>
-              Ah sh<span className=''>*</span>t, I've reached the end, <br className='max-sm:hidden'/> go back up <a href="#home">&uarr;</a>
+              Ah sh<span className=''>*</span>t, I've reached the end, <br className='max-sm:hidden'/> go back up 
+              <Redirect to="home">
+                <span style={{ textDecoration: 'underline', cursor: 'pointer' }}>&uarr;</span>
+              </Redirect>
             </h2>
           </div>
 
