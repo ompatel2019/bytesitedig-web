@@ -13,8 +13,8 @@ const Form = () => {
     {
       heading: 'Send a message',
       subheading: 'Our friendly team is here to help.',
-      information: 'info@byte.com',
-      link: 'mailto:info@byte.com',
+      information: 'ompatel2019@gmail.com',
+      link: 'ompatel2019@gmail.com',
       logo: emailLogo
     },
     {

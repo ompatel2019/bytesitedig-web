@@ -17,8 +17,8 @@ const Footer = () => {
 
   const information = [
     {
-      information: 'info@byte.com',
-      link: 'mailto:info@byte.com',
+      information: 'ompatel2019@gmail.com',
+      link: 'mailto:ompatel2019@gmail.com',
       logo: emailLogo,
       alt: 'Email'
     },
