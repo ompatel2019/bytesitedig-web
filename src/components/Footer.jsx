@@ -10,7 +10,7 @@ import Redirect from './Redirect'; // Import the Redirect component
 const Footer = () => {
   
   const socialIcons = [
-    { src: instagram, alt: "Instagram" },
+    { src: instagram, alt: "Instagram", link:'https://www.instagram.com/bytesitedigital/' },
     { src: tiktok, alt: "TikTok" },
     { src: linkedin, alt: "LinkedIn" },
   ];
@@ -43,7 +43,7 @@ const Footer = () => {
           <div className='flex gap-4'>
             <div className='space-y-2 flex flex-col justify-around'>
               {socialIcons.map((icon, index) => (
-                <img key={index} src={icon.src} alt={icon.alt} className="cursor-pointer" />
+                <a href={icon.link} target="_blank" rel="noopener noreferrer"><img key={index} src={icon.src} alt={icon.alt} className="cursor-pointer" /></a>
               ))}
             </div>
             <h2 className='text-c4 font-dm-sans text-h4 md:leading-[3rem] max-sm:text-h7'>
