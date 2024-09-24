@@ -37,7 +37,7 @@ const Footer = () => {
   ];
 
   return (
-    <div id='footer' className='2xl:px-[160px] 2xl:py-[96px] 2xl:pb-[16px] xl:px-[96px] lg:px-[72px] md:px-[24px] sm:px-[16px] max-sm:px-[16px] py-[48px] bg-c2'>
+    <div id='footer' className='2xl:px-[160px] 2xl:py-[96px] 2xl:pb-[16px] xl:px-[96px] lg:px-[72px] md:px-[24px] sm:px-[16px] max-sm:px-[16px] py-[48px] bg-c1'>
       <div className='flex flex-col space-y-8 max-md:space-y-6 max-sm:space-y-2'>
         <div className='flex justify-between max-sm:items-center max-sm:gap-2'>
           <div className='flex gap-4'>
