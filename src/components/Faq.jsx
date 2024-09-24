@@ -35,7 +35,7 @@ const Faq = () => {
   };
 
   return (
-    <div id='faqs' className='2xl:px-[160px] 2xl:py-[64px] 2xl:pb-[32px] xl:px-[96px] lg:px-[72px] md:px-[24px] sm:px-[16px] max-sm:px-[16px] max-sm:py-[32px] py-[96px] lg:pb-[96px] bg-c2'>
+    <div id='faqs' className='2xl:px-[160px] 2xl:py-[64px] 2xl:pb-[32px] xl:px-[96px] lg:px-[72px] md:px-[24px] sm:px-[16px] max-sm:px-[16px] max-sm:py-[32px] py-[96px] lg:pb-[96px] bg-c1'>
       <h2 className='text-center font-medium font-dm-mono text-[#fafafa] text-h3 max-sm:text-h5 mb-2'>07 - FAQ</h2>
       <p className='font-dm-sans text-h4 max-sm:text-h7 font-medium text-[#fafafa] text-center'>Your questions, answered.</p>
       {faqs.map((faq, index) => (
